@@ -2,7 +2,7 @@
  * CABAL BRASIL PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  * Copyright (c) 2019, Cabal Brasil and/or its affiliates. All rights reserved.
  */
-package Repository;
+package Model;
 
 import com.sun.javafx.beans.IDProperty;
 

@@ -4,9 +4,8 @@
  */
 package Validation;
 
-import Repository.TransactionDebit;
+import Model.TransactionDebit;
 import org.jpos.ee.DB;
-import org.jpos.iso.ISOMsg;
 import org.jpos.transaction.Context;
 
 import java.io.Serializable;
@@ -15,7 +14,7 @@ public class TransactionDebitInsert {
 
 	public void insertTransacion(TransactionDebit transactionDebit, Serializable context){
 		Context c = (Context) context;
-		DB con  = c.get("DB");
+		DB con  = c.get("DB"  );
 		
 		//con.beginTransaction();
 		transactionDebit.getCard();

@@ -4,9 +4,9 @@
  */
 package Validation;
 
-import Repository.CardEntity;
-import Repository.ResponseCodeEntity;
-import Repository.TransactionDebit;
+import Model.CardEntity;
+import Model.ResponseCodeEntity;
+import Model.TransactionDebit;
 import org.hibernate.query.Query;
 import org.jpos.ee.DB;
 import org.jpos.iso.ISOMsg;
@@ -37,7 +37,7 @@ public class ValidarCard implements TransactionParticipant {
 		if( !Objects.isNull(card)){
 			responseCodeEntity.setInternalResponseCode("00");
 			incomingMessage.set(39,responseCodeEntity.getInternalResponseCode());
-			log.addMessage("O cartão enviado  existe!!!" );
+			log.addMessage("O cartão enviado existe!dadaii i!" );
 			transactionDebit.setResponseCode(responseCodeEntity.getInternalResponseCode());
 			transactionDebit.setCard(card.getCard());
 			transactionDebit.setAccount(card.getAccount());
